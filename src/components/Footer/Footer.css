@@ -1,0 +1,121 @@
+.footer {
+    background-color: #000;
+    color: white;
+  }
+  
+  /* Scrolling Banner */
+  .brand-banner {
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+    padding: 24px 0;
+    overflow: hidden;
+  }
+  
+  .brand-marquee {
+    display: flex;
+    width: fit-content;
+    animation: scroll-left 20s linear infinite;
+    white-space: nowrap;
+  }
+  
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .brand-item {
+    display: flex;
+    align-items: center;
+    margin: 0 32px;
+  }
+  
+  .brand-icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 16px;
+    color: #666;
+  }
+  
+  .brand-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  /* Main Content */
+  .footer-content {
+    padding: 80px 24px;
+  }
+  
+  .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .footer-title {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 32px;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-title {
+      font-size: 5rem;
+    }
+  }
+  
+  .footer-email a {
+    font-size: 1.25rem;
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-email a:hover {
+    color: white;
+  }
+  
+  /* Bottom Section */
+  .footer-bottom {
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid #333;
+    padding-top: 48px;
+    margin-top: 48px;
+    gap: 16px;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .footer-bottom {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  .social-links {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .social-link {
+    color: #999;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social-link:hover {
+    color: white;
+  }
+  
+  @media (min-width: 768px) {
+    .copyright {
+      margin-bottom: 0;
+    }
+  }
+  

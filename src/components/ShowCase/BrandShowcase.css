@@ -1,0 +1,53 @@
+.brand-section {
+  padding: 64px 24px;
+  border-bottom: 1px solid #1f1f1f;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.brand-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.brand-list {
+  display: flex;
+  flex-direction: row; /* Ensure everything is in one row */
+  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Wrap items on small screens */
+}
+
+.brand-item {
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.brand-item:hover {
+  opacity: 1;
+}
+
+.brand-logo {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+
+.brand-description {
+  flex: 1;
+  max-width: 500px;
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .brand-logo {
+    font-size: 1.5rem;
+  }
+
+  .brand-description {
+    font-size: 1.125rem;
+  }
+}

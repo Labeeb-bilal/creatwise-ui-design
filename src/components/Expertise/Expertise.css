@@ -1,0 +1,81 @@
+.expertise-section {
+    padding: 80px 24px;
+    background-color: #0f0f0f;
+    color: white;
+  }
+  
+  .expertise-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .expertise-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 64px;
+  }
+  
+  .expertise-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 16px;
+    color: white;
+  }
+  
+  .expertise-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  @media (min-width: 768px) {
+    .expertise-title {
+      font-size: 3rem;
+    }
+  }
+  
+  .expertise-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 48px;
+  }
+  
+  @media (min-width: 1024px) {
+    .expertise-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 64px;
+    }
+  }
+  
+  .expertise-item {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .expertise-heading {
+    font-size: 1.75rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .expertise-heading {
+      font-size: 2rem;
+    }
+  }
+  
+  .dot {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 16px;
+  }
+  
+  .expertise-description {
+    color: #ccc;
+    line-height: 1.7;
+    padding-left: 24px;
+  }
+  

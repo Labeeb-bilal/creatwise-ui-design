@@ -1,0 +1,62 @@
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #333;
+    padding: 1rem 2rem;
+  }
+  
+  .header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: white;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+  }
+  
+  .nav-button {
+    padding: 0.5rem 2.5rem;
+    border-radius: 999px;
+    border: none;
+    color: #ccc;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .nav-button.active {
+    background: white;
+    color: black;
+    font-weight: 500;
+  }
+  
+  .hire-button {
+    border: 1px solid white;
+    padding: 0.5rem 1.25rem;
+    border-radius: 999px;
+    background: transparent;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .hire-button.active{
+    background: white;
+    color: black;
+    font-weight: 500;
+  }

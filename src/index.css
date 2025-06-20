@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background-color: #000;
+  color: #fff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 4px;
+}
+
+/* ✅ DO NOT override .site-header */
+.header-fixed {
+  /* REMOVE this block if using `.site-header` */
+  /* position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid #1f1f1f; */
+}
+
+/* ✅ REMOVE if you're using `.site-header .header-container` */
+.header-container {
+  all: unset; /* Optional: Reset all styles if conflicts happen */
+}
+
+/* ✅ REMOVE conflicting nav styles if you're using your own classes like `.nav-button` */
+.nav-menu {
+  display: contents; /* Or remove completely */
+}
+
+/* ✅ Remove or reset .nav-link if not used */
+.nav-link,
+.nav-link.active {
+  all: unset;
+}
+
+/* ✅ Keep other components as is */
+/* ...sections, experience, brand, etc. ... */
+
+/* Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-5px); }
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+/* Responsive scaling */
+@media (max-width: 767px) {
+  .section-heading { font-size: 2.5rem; }
+  .hero-title { font-size: 2rem; }
+  .work-title { font-size: 1.5rem; }
+  .blog-title { font-size: 1.5rem; }
+  .testimonial-text { font-size: 1.25rem; }
+  .footer-cta { font-size: 3rem; }
+}
